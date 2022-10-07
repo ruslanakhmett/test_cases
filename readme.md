@@ -11,19 +11,22 @@ I did not check it for Windows.
 To run you need docker on your machine.
 
 Enter your terminal:
-
 1. docker pull sccrsccr1/ruslan_server:latest
-
 2. docker run --cap-add=NET_ADMIN -d ruslan_server:latest
-
 3. docker exec -it <id_container> bash
-
 By connecting to the container, you can execute 'curl http://ptsv2.com' and see the result.
 
 
+Run without docker:
+1. Copy testcase_2.py on your Linux host
+2. Run apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
+3. Run pip3 install scapy NetfilterQueue flashtext
+4. Run python3 testcase_2.py and run curl http://ptsv2.com on second terminal.
 
 
-Original:
+
+####################################
+ORIGINAL:
 <p>*All this form does is redirect you to /t/[search string]</p>
     <p>
       <h3>CORS is now supported</h3>
@@ -35,9 +38,9 @@ Original:
         But, we see this all the time and what most frameworks do is merge the post and get parameters into one object, which is what this service does. So you will see both together. If you wish
         to view the post body seperately from the get parameters you may configure the toilet to dump the post body first. In which case the stream will be consumed and only the get
         parameters will be parsed.
-    
 
-Replaced:
+######################################
+REPLACED:
 <p>*All this form does is redirect you to /t/[search string]</p>
     <p>
       <h3>CORS is now supported</h3>
