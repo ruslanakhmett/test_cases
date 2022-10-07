@@ -1,16 +1,12 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
 WORKDIR /app
 
-ENV PYTHONDONTWRITEBYTECODE 1
-
-ENV PYTHONUNBUFFERED 1
-
 COPY . .
 
-RUN apk update && apk upgrade 
+RUN apt update && apt upgrade 
 
-RUN apk add nano python3 py3-pip py3-wheel python3-dev libnfnetlink-dev libnetfilter_conntrack-dev libnetfilter_queue curl iptables
+RUN apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
 
 RUN pip3 install scapy NetfilterQueue flashtext
 
