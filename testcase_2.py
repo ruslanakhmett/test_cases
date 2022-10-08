@@ -48,14 +48,12 @@ def process_packet(packet):
 
 if __name__ == "__main__":
     try:
-        subprocess.call('echo 1 > /proc/sys/net/ipv4/ip_forward', shell=True)
-        subprocess.call('iptables -I FORWARD -j NFQUEUE --queue-num 0', shell=True)
-        # subprocess.call("iptables -I INPUT -j NFQUEUE --queue-num 0",
-        #                 shell=True
-        #                 )
-        # subprocess.call("iptables -I OUTPUT -j NFQUEUE --queue-num 0",
-        #                 shell=True
-        #                 )
+        subprocess.call("iptables -I INPUT -j NFQUEUE --queue-num 0",
+                        shell=True
+                        )
+        subprocess.call("iptables -I OUTPUT -j NFQUEUE --queue-num 0",
+                        shell=True
+                        )
 
         queue = netfilterqueue.NetfilterQueue()
         queue.bind(0, process_packet)
