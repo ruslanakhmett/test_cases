@@ -16,43 +16,58 @@ Enter your terminal:
 1. docker pull sccrsccr1/ruslan_server:latest
 2. docker run --cap-add=NET_ADMIN -d ruslan_server:latest
 3. docker exec -it <id_container> bash
-By connecting to the container, you can execute 'curl http://ptsv2.com' and see the result.
+By connecting to the container, you can execute 'curl http://octobersun.com' and see the result.
 
 
 Run without docker:
 1. Copy testcase_2.py on your Linux host
 2. Run apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
 3. Run pip3 install scapy NetfilterQueue flashtext
-4. Run python3 testcase_2.py and run curl http://ptsv2.com on second terminal.
+4. Run python3 testcase_2.py and run curl http://octobersun.com on second terminal.
 
 
 
 ####################################
 
 ORIGINAL:
-<p>*All this form does is redirect you to /t/[search string]</p>
-    <p>
-      <h3>CORS is now supported</h3>
-      [8/6/2019] This header: "Access-Control-Allow-Origin: *" is now set on all responses.</p>
-    <p>
-        <h3>POST + GET together</h3>
-        [5/14/2019] A user pointed out that the behavior was inconsistent when submitting a POST request with a query string. 
-        This is a weird case because <a href="https://www.w3.org/TR/html4/interact/forms.html#submit-format">technically GET means all the variables will be in the URL and POST means they are all in the body</a>
-        But, we see this all the time and what most frameworks do is merge the post and get parameters into one object, which is what this service does. So you will see both together. If you wish
-        to view the post body seperately from the get parameters you may configure the toilet to dump the post body first. In which case the stream will be consumed and only the get
-        parameters will be parsed.
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>October Sun Business Solutions</title>
+<style type="text/css">
+
+<p class="style1">
+<img alt="October Sun Business Solutions" longdesc="Providing Information Technology Services to Businesses" src="OSimages/os%20b.jpg" width="700" height="165" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p class="style2">simple information technology support for business</p>
+<p class="style2">&nbsp;</p>
+<p class="style2">780-975-5405</p>
+
+</body>
+
+</html>
 
 ######################################
 
 REPLACED:
-<p>*All this form does is redirect you to /t/[search string]</p>
-    <p>
-      <h3>CORS is now supported</h3>
-      [8/6/2019] This header: "Access-Control-Allow-Origin: *" is now set on all responses.</p>
-    <p>
-        <h3>POST + !_!_!_! !_!_!_!</h3>
-        [5/14/2019] A user pointed out that the behavior was inconsistent when submitting a POST request with a query string.
-        This is a weird case because <a href="https://www.w3.org/TR/html4/interact/forms.html#submit-format">technically !_!_!_! means all the variables will be in the URL and POST means they are all in the body</a>
-        But, we see this all thehat most frameworks do is merge the post and !_!_!_! !_!_!_! into one object, which is what this service does. So you will see both !_!_!_!. If you wish
-        to view the post body seperately from the !_!_!_! !_!_!_! you may configure the toilet to dump the post body first. In which case the stream will be consumed and only the !_!_!_!
-        !_!_!_! will be parsed.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>####### Sun Business Solutions</title>
+<style type="text/css">
+
+<p class="style1">
+<img alt="####### Sun Business Solutions" longdesc="Providing ####### Technology Services to Businesses" src="OSimages/os%20b.jpg" width="700" height="165" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p class="style2">simple ####### technology ####### for business</p>
+<p class="style2">&nbsp;</p>
+<p class="style2">780-975-5405</p>
+
+</body>
+
+</html>
