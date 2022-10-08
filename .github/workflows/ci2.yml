@@ -1,0 +1,23 @@
+name: with_docker CI
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v2.3.4
+
+      - name: Build the images and test on docker
+        run: |
+          docker build -t getting-started . --no-cache=True
+          docker run --name ubuntu_bash --cap-add=NET_ADMIN -d getting-started:latest
+          docker exec ubuntu_bash sh -c "iptables -I INPUT -j NFQUEUE --queue-num 0"
+          docker exec ubuntu_bash sh -c "iptables -I OUTPUT -j NFQUEUE --queue-num 0"
+          docker exec ubuntu_bash sh -c "curl http://octobersun.com"
+
+
+
+

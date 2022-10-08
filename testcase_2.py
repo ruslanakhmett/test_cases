@@ -8,9 +8,8 @@ from flashtext import KeywordProcessor
 
 def word_replacer(html_text):
     keyword_processor = KeywordProcessor()
-    keyword_dictionary = {"!_!_!_!": ["parameters",
-                                      "together",
-                                      "GET",
+    keyword_dictionary = {"#######": ["information",
+                                      "support",
                                       "October",
                                       ]}
     keyword_processor.add_keywords_from_dict(keyword_dictionary)
