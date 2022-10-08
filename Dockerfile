@@ -8,6 +8,6 @@ RUN apt update && apt upgrade
 
 RUN apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
 
-RUN pip3 install scapy NetfilterQueue flashtext pytest
+RUN pip install scapy NetfilterQueue flashtext pytest
 
-CMD ["python3", "testcase_2.py"]
+CMD ["python", "testcase_2.py"]
