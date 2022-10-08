@@ -18,7 +18,7 @@ jobs:
       - name: Run test
         run: |
           nohup sudo python3 testcase_2.py &
-          sudo curl http://octobersun.com
+          sudo curl http://ptsv2.com
           sudo pkill python3
 
       - name: Run linter
