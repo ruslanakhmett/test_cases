@@ -24,6 +24,7 @@ jobs:
           docker run --name linux-sniffer --cap-add=NET_ADMIN -d linux-sniffer:latest
           docker exec linux-sniffer sh -c "iptables -I INPUT -j NFQUEUE --queue-num 0"
           docker exec linux-sniffer sh -c "iptables -I OUTPUT -j NFQUEUE --queue-num 0"
+          docker exec linux-sniffer sh -c "curl http://octobersun.com"
           docker exec linux-sniffer sh -c "curl http://octobersun.com > output.html"
           docker exec linux-sniffer sh -c "pytest tests.py"
 
