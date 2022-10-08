@@ -17,7 +17,7 @@ jobs:
           sudo pip3 install scapy NetfilterQueue flashtext flake8
       - name: Run test
         run: |
-          nohup python3 testcase_2.py &
+          nohup sudo python3 testcase_2.py &
           sudo curl http://octobersun.com
           exit 0
 
