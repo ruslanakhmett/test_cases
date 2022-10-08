@@ -1,4 +1,5 @@
 FOR testcase_2 !
+[![Python CI](https://github.com/ruslanakhmett/test_cases/actions/workflows/ci.yml/badge.svg)](https://github.com/ruslanakhmett/test_cases/actions/workflows/ci.yml)
 
 Page for test(only http), example: http://ptsv2.com
 

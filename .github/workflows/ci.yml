@@ -8,15 +8,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: |
-
-          sudo apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
-          sudo pip3 install scapy NetfilterQueue flashtext flake8
-          sudo python3 testcase_2.py
-          curl http://ptsv2.com
-      - name: Run linter and tests
+      - name: Checkout repository content
+        uses: actions/checkout@v2.3.4
+      - name: Run linter
         run: |
           flake8 .
+      - name: Install dependencies
+        run: |
+          sudo apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
+          sudo pip3 install scapy NetfilterQueue flashtext flake8
+      - name: Run test
+        run: |
+          sudo python3 testcase_2.py nohup &
+          curl http://ptsv2.com
+          sudo shutdown
+
 
