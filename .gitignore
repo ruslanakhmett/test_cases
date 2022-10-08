@@ -1,1 +1,2 @@
-ci.yml
+.pytest_cache
+__pycache__

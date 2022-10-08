@@ -1,0 +1,32 @@
+name: with_docker CI
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v2.3.4
+      
+      - name: Install dependencies
+        run: |
+          pip install flake8 pytest
+
+      - name: Run linter
+        run: |
+          flake8 .
+      
+      - name: Build the images and test
+        run: |
+          docker build -t linux-sniffer . --no-cache=True
+          docker run --name linux-sniffer --cap-add=NET_ADMIN -d linux-sniffer:latest
+          docker exec linux-sniffer sh -c "iptables -I INPUT -j NFQUEUE --queue-num 0"
+          docker exec linux-sniffer sh -c "iptables -I OUTPUT -j NFQUEUE --queue-num 0"
+          docker exec linux-sniffer sh -c "curl http://octobersun.com > output.html"
+          docker exec linux-sniffer sh -c "pytest tests.py"
+
+
+
+
