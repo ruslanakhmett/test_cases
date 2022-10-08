@@ -10,19 +10,26 @@ jobs:
     steps:
       - name: Checkout repository content
         uses: actions/checkout@v2.3.4
+      # - name: Install dependencies
+      #   run: |
+      #     sudo apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
+      #     sudo pip3 install scapy NetfilterQueue flashtext flake8
+      # - name: Run test
+      #   run: |
+      #     nohup sudo python3 testcase_2.py &
+      #     sudo curl http://ptsv2.com
+      #     sudo pkill python3
+      # - name: Run linter
+      #   run: |
+      #     flake8 .
+      - name: Build the images and start the containers
+        run: |
+          export GITHUB_WORKFLOW=True
+          export MODE="Test"
+          docker build -t getting-started . --no-cache=True
+          docker run --name ubuntu_bash --cap-add=NET_ADMIN -d getting-started:latest
+          docker exec -ti ubuntu_bash sh -c "nohup sudo python3 testcase_2.py & && sudo curl http://ptsv2.com && sudo pkill python3"
 
-      - name: Install dependencies
-        run: |
-          sudo apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
-          sudo pip3 install scapy NetfilterQueue flashtext flake8
-      - name: Run test
-        run: |
-          nohup sudo python3 testcase_2.py &
-          sudo curl http://ptsv2.com
-          sudo pkill python3
 
-      - name: Run linter
-        run: |
-          flake8 .
 
 
