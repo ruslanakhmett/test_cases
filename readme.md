@@ -1,6 +1,6 @@
 FOR testcase_2 !
 
-[![with_docker CI](https://github.com/ruslanakhmett/test_cases/actions/workflows/ci2.yml/badge.svg)](https://github.com/ruslanakhmett/test_cases/actions/workflows/ci.yml)
+[![with_docker CI](https://github.com/ruslanakhmett/test_cases/actions/workflows/ci.yml/badge.svg)](https://github.com/ruslanakhmett/test_cases/actions/workflows/ci.yml)
 
 Page for test(only http), example: http://octobersun.com
 
