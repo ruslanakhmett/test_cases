@@ -11,9 +11,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          su root
-          apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
-          pip3 install scapy NetfilterQueue flashtext flake8
+
+          sudo apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
+          sudo pip3 install scapy NetfilterQueue flashtext flake8
       - name: Run linter and tests
         run: |
           flake8 .
