@@ -19,6 +19,7 @@ jobs:
         run: |
           nohup python3 testcase_2.py &
           sudo curl http://octobersun.com
+          exit 0
 
       - name: Run linter
         run: |

@@ -4,7 +4,7 @@ FOR testcase_2 !
 
 Page for test(only http), example: http://ptsv2.com
 
-For clarity, I chose to replace this words: ['parameters', 'together', 'GET'] for this '!_!_!_!'
+For clarity, I chose to replace this words: ['parameters', 'together', 'GET', 'October'] for this '!_!_!_!'
 
 This script is recommended to run on Linux, it seems 
 MacOS does not support the netfilterqueue library. 
