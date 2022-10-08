@@ -27,7 +27,6 @@ jobs:
           docker exec linux-sniffer sh -c "curl http://octobersun.com"
           docker exec linux-sniffer sh -c "curl http://octobersun.com > temp.html"
           docker exec linux-sniffer sh -c "head -n-1 temp.html > output.html"
-          docker exec linux-sniffer sh -c "cat output.html"
           docker exec linux-sniffer sh -c "pytest tests.py"
 
 
