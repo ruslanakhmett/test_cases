@@ -28,7 +28,7 @@ jobs:
           export MODE="Test"
           docker build -t getting-started . --no-cache=True
           docker run --name ubuntu_bash --cap-add=NET_ADMIN -d getting-started:latest
-          docker exec -ti ubuntu_bash sh -c "nohup sudo python3 testcase_2.py & && sudo curl http://ptsv2.com && sudo pkill python3"
+          docker exec -ti ubuntu_bash sh -c "sudo curl http://ptsv2.com"
 
 
 
