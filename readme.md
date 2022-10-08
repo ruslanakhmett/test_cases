@@ -13,9 +13,9 @@ I did not check it for Windows.
 To run you need docker on your machine.
 
 Enter your terminal:
-1. docker pull sccrsccr1/ruslan_server:latest
-2. docker run --cap-add=NET_ADMIN -d ruslan_server:latest
-3. docker exec -it <id_container> bash
+1. docker pull sccrsccr1/linux_shiffer:latest
+2. docker run --name linux-sniffer --cap-add=NET_ADMIN -d linux-sniffer:latest
+3. docker exec -it linux-sniffer bash
 By connecting to the container, you can execute 'curl http://octobersun.com' and see the result.
 
 
