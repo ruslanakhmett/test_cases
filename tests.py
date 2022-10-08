@@ -4,4 +4,4 @@ def test_expected_page():
     with open('output.html', "r", encoding='utf-8-sig') as file:
         output_page = file.read()
 
-    assert expected_page == output_page.encode('utf-8')
+    assert expected_page == output_page
