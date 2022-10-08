@@ -17,8 +17,7 @@ jobs:
           sudo pip3 install scapy NetfilterQueue flashtext flake8
       - name: Run test
         run: |
-          sudo nohup python3 testcase_2.py &
-          exit 0
+          nohup python3 testcase_2.py &
           sudo curl http://octobersun.com
 
       - name: Run linter
