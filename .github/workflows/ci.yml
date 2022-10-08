@@ -4,26 +4,16 @@ on:
   - push
   - pull_request
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: Install dependencies
-#         run: |
-#           pip3 install scapy NetfilterQueue flashtext flake8
-#           apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
-#       - name: Run linter and tests
-#         run: |
-#           flake8 .
-
 jobs:
-  run_tests:
-    runs-on: ubuntu-20.04
+  build:
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Run script file
-      run: |
-         chmod +x testcase_2.py
-         python3 testcase_2.py
-      shell: bash
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
+          pip3 install scapy NetfilterQueue flashtext flake8
+      - name: Run linter and tests
+        run: |
+          flake8 .
+
