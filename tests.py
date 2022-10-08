@@ -1,4 +1,4 @@
-def test_download():
+def test_expected_page():
     with open('fixture.html', "r", encoding='utf-16le') as file:
         expected_page = file.read()
     with open('output.html', "r", encoding='utf-16le') as file:

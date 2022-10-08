@@ -10,4 +10,4 @@ RUN apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetf
 
 RUN pip install scapy NetfilterQueue flashtext pytest
 
-CMD ["python", "testcase_2.py"]
+CMD ["python3", "testcase_2.py"]
