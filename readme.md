@@ -31,7 +31,7 @@ ORIGINAL:
 <img alt="October Sun Business Solutions" longdesc="Providing Information Technology Services to Businesses" src="OSimages/os%20b.jpg" width="700" height="165" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
 <p class="style2">simple information technology support for business</p>
 <p class="style2">&nbsp;</p>
-<p class="style2">780-975-5405</p>
+
 ...
 
 ######################################
@@ -48,5 +48,5 @@ PROCESSED:
 <img alt="####### Sun Business Solutions" longdesc="Providing ####### Technology Services to Businesses" src="OSimages/os%20b.jpg" width="700" height="165" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
 <p class="style2">simple ####### technology ####### for business</p>
 <p class="style2">&nbsp;</p>
-<p class="style2">780-975-5405</p>
+
 ...
