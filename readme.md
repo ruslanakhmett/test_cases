@@ -31,6 +31,8 @@ ORIGINAL:
 <p class="style2">simple information technology support for business</p>
 <p class="style2">&nbsp;</p>
 <p class="style2">780-975-5405</p>
+</style>
+</head>
 ...
 
 ######################################
@@ -48,4 +50,6 @@ PROCESSED:
 <p class="style2">simple ####### technology ####### for business</p>
 <p class="style2">&nbsp;</p>
 <p class="style2">780-975-5405</p>
+</style>
+</head>
 ...
