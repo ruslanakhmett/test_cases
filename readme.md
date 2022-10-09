@@ -21,7 +21,7 @@ By connecting to the container, you can execute 'curl http://octobersun.com' and
 ORIGINAL:
 
 ...
-<!-- <head>
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>October Sun Business Solutions</title>
 <style type="text/css">
@@ -30,7 +30,7 @@ ORIGINAL:
 <img alt="October Sun Business Solutions" longdesc="Providing Information Technology Services to Businesses" src="OSimages/os%20b.jpg" width="700" height="165" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
 <p class="style2">simple information technology support for business</p>
 <p class="style2">&nbsp;</p>
-<p class="style2">780-975-5405</p> -->
+<p class="style2">780-975-5405</p>
 ...
 
 ######################################
@@ -38,7 +38,7 @@ ORIGINAL:
 PROCESSED:
 
 ...
-<!-- <head>
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>####### Sun Business Solutions</title>
 <style type="text/css">
@@ -47,5 +47,5 @@ PROCESSED:
 <img alt="####### Sun Business Solutions" longdesc="Providing ####### Technology Services to Businesses" src="OSimages/os%20b.jpg" width="700" height="165" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
 <p class="style2">simple ####### technology ####### for business</p>
 <p class="style2">&nbsp;</p>
-<p class="style2">780-975-5405</p> -->
+<p class="style2">780-975-5405</p>
 ...
