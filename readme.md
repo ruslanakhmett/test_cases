@@ -6,24 +6,13 @@ Page for test(only http), example: http://octobersun.com
 
 For clarity, I chose to replace this words: ["information", "support", "October",] for this "#######"
 
-This script is recommended to run on Linux, it seems 
-MacOS does not support the netfilterqueue library. 
-I did not check it for Windows.
-
-To run you need docker on your machine.
+To run need docker on your machine.
 
 Enter your terminal:
 1. docker pull sccrsccr1/linux_shiffer:latest
 2. docker run --name linux-sniffer --cap-add=NET_ADMIN -d linux-sniffer:latest
 3. docker exec -it linux-sniffer bash
 By connecting to the container, you can execute 'curl http://octobersun.com' and see the result.
-
-
-Run without docker:
-1. Copy testcase_2.py on your Linux host
-2. Run apt install -y nano python3 python3-pip python3-dev libnfnetlink-dev libnetfilter-queue-dev curl iptables
-3. Run pip3 install scapy NetfilterQueue flashtext
-4. Run python3 testcase_2.py and run curl http://octobersun.com on second terminal.
 
 
 
