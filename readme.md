@@ -12,6 +12,7 @@ Enter your terminal:
 1. docker pull sccrsccr1/linux_shiffer:latest
 2. docker run --name linux-sniffer --cap-add=NET_ADMIN -d linux-sniffer:latest
 3. docker exec -it linux-sniffer bash
+
 By connecting to the container, you can execute 'curl http://octobersun.com' and see the result.
 
 
